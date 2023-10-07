@@ -11,6 +11,11 @@ class UserController extends Controller
         return view('pages.auth.login');
     }
 
+    public function userCreate()
+    {
+        return "OK";
+    }
+
     public function userRegister()
     {
         return view('pages.auth.registration');
