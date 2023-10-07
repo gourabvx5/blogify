@@ -6,8 +6,5 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    public function homePage()
-    {
-        return view('pages.home');
-    }
+    
 }

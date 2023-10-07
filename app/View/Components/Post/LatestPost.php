@@ -1,12 +1,12 @@
 <?php
 
-namespace App\View\Components\Page;
+namespace App\View\Components\Post;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Hero extends Component
+class LatestPost extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class Hero extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.page.hero');
+        return view('components.post.latest-post');
     }
 }

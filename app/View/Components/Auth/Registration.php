@@ -1,12 +1,12 @@
 <?php
 
-namespace App\View\Components\Page;
+namespace App\View\Components\Auth;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Posts extends Component
+class Registration extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class Posts extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.page.posts');
+        return view('components.auth.registration');
     }
 }
