@@ -19,7 +19,7 @@
                 </li>
             </ul>
             <div class="d-flex align-items-center gap-4">
-                <div class="nav_search d-none d-md-flex">
+                <div class="nav_search d-none d-md-flex align-items-center">
                     <input type="text" placeholder="Search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
@@ -55,8 +55,9 @@
                         <a class="sign-in" href="#">Sign in</a>
                         <a class="sign-up" href="#">Sign Up</a>
                     </div>
-                    <div class="nav_search ">
+                    <div class="nav_search d-flex align-items-center">
                         <input type="text" placeholder="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
             </div>

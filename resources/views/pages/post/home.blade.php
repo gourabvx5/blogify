@@ -4,10 +4,12 @@
     Create a unique and beautiful blog easily
 @endsection
 
-{{-- Header --}}
-<x-header/>
+
 
 @section('content')
+
+    {{-- Header --}}
+    <x-header/>                                 
 
     {{-- Hero --}}
     <x-post.main-post/>
@@ -17,6 +19,6 @@
     
     {{-- Footer --}}
     <x-footer/>
-    
+
 @endsection
 
