@@ -16,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Route for Home Controller 
 Route::get('/', [HomeController::class, 'homePage'])->name('home.page');
 
+//Route For users login and registration
 Route::get('/login', [UserController::class, 'userLogin'])->name('user.login');
 Route::get('/registration', [UserController::class, 'userRegister'])->name('user.register');
