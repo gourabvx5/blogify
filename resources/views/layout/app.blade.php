@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blogify -  @yield('title')</title>
 
+    {{-- Fav Icon --}}
+    <link rel="shortcut icon" href="{{asset('img/fav-icon.png')}}" type="image/x-icon">
+
     {{-- Font --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

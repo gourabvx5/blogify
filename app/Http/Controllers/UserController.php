@@ -15,4 +15,8 @@ class UserController extends Controller
     {
         return view('pages.auth.registration');
     }
+    public function userProfile()
+    {
+        return view('pages.post.profile.profile');
+    }
 }

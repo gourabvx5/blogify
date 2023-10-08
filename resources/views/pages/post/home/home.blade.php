@@ -9,7 +9,8 @@
 @section('content')
 
     {{-- Header --}}
-    <x-header/>                                 
+    {{-- <x-header.header/>  --}}
+    <x-header.author-header/> 
 
     {{-- Hero --}}
     <x-post.main-post/>
