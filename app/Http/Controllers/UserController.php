@@ -2,21 +2,36 @@
 
 namespace App\Http\Controllers;
 
+use Exception;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-    public function userLogin()
+    public function userRegistration(Request $request)
     {
-        return view('pages.auth.login');
-    }
-
-    public function userRegister()
-    {
-        return view('pages.auth.registration');
-    }
-    public function userProfile()
-    {
-        return view('pages.post.profile.profile');
+        $validatedData = $request->validate([
+            'first_name' => 'required|string|max:255',
+            'last_name' => 'required|string|max:255',
+            'blog_name' => 'required|string|max:255',
+            'phone' => 'required|string|max:20',
+            'email' => 'required|email|unique:users,email',
+            'password' => 'required|string|min:6',
+        ]);
+        try {
+            $validatedData['password'] = Hash::make($validatedData['password']);
+            $user = User::create($validatedData);
+            return response()->json([
+                "status" => "success",
+                "message" => "Registration successful",
+                "user" => $user
+            ], 200);
+        } catch (Exception $e) {
+            return response()->json([
+                "status" => "failed",
+                "message" => $e->getMessage()
+            ], 500);
+        }
     }
 }
