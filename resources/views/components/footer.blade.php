@@ -7,7 +7,7 @@
                 <div class="mt-4">
                     <div>
                         <strong>Email : </strong>
-                        <a href="#">info@blgify.net</a> 
+                        <a href="#">info@blogify.net</a> 
                     </div>
                     <div>
                         <strong>Phone : </strong>

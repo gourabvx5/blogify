@@ -9,15 +9,22 @@
 @section('content')
 
     {{-- Header --}}
-    {{-- <x-header.header/>  --}}
-    <x-header.author-header/> 
+    <x-header.admin-header/>
 
     {{-- Hero --}}
     <x-post.main-post/>
 
     {{-- Latest Post --}}
     <x-post.latest-post/>
-    
+
+    <section>
+        <div class="container">
+            <div class="mt-4 text-center">
+                <a class="all-post-btn" href="{{route('all.post')}}">View All Post</a>
+            </div>
+        </div>
+    </section>
+
     {{-- Footer --}}
     <x-footer/>
 

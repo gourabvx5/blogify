@@ -46,23 +46,23 @@ const inputTarget = e.target;
 const file = inputTarget.files[0];
 
 if (file) {
-const reader = new FileReader();
+    const reader = new FileReader();
 
-reader.addEventListener("load", function (e) {
-    const readerTarget = e.target;
+    reader.addEventListener("load", function (e) {
+        const readerTarget = e.target;
 
-    const img = document.createElement("img");
-    img.src = readerTarget.result;
-    img.classList.add("picture__img");
+        const img = document.createElement("img");
+        img.src = readerTarget.result;
+        img.classList.add("picture__img");
 
-    pictureImage.innerHTML = "";
-    pictureImage.appendChild(img);
-});
+        pictureImage.innerHTML = "";
+        pictureImage.appendChild(img);
+    });
 
-reader.readAsDataURL(file);
-} else {
-pictureImage.innerHTML = pictureImageTxt;
-}
+    reader.readAsDataURL(file);
+    } else {
+        pictureImage.innerHTML = pictureImageTxt;
+    }
 });
 
 
@@ -72,7 +72,7 @@ pictureImage.innerHTML = pictureImageTxt;
 |--------------------------------------------------------------------------
 */
 (function () {
-    var tagList = ['Technology', 'Sports', 'Football', 'Cricket'];
+    var tagList = ['Technology', 'Sports', 'Web Development', 'Web  Design'];
 
     
     var $tagList = $("#tagList");

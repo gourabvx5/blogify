@@ -9,7 +9,7 @@
                     <a class="nav_link" href="{{route('home.page')}}">Home</a>
                 </li>
                 <li>
-                    <a class="nav_link" href="#">Posts</a>
+                    <a class="nav_link" href="{{route('all.post')}}">Posts</a>
                 </li>
                 <li>
                     <a class="nav_link" href="#">About</a>

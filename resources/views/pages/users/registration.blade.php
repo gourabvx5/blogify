@@ -1,3 +1,11 @@
+@extends('layout.app')
+
+@section('title')
+    Registration
+@endsection
+
+@section('content')
+
 <section class="user_registration">
     <a class="logo" href="{{route('home.page')}}">
         <img src="{{asset('img/logo.png')}}" alt="Logo">
@@ -23,3 +31,5 @@
         </div>
     </div>
 </section>
+
+@endsection

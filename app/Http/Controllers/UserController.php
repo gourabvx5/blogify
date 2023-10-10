@@ -8,15 +8,14 @@ class UserController extends Controller
 {
     public function userLogin()
     {
-        return view('pages.auth.login');
+        return view('pages.users.login');
     }
-
     public function userRegister()
     {
-        return view('pages.auth.registration');
+        return view('pages.users.registration');
     }
     public function userProfile()
     {
-        return view('pages.post.profile.profile');
+        return view('pages.users.profile');
     }
 }
