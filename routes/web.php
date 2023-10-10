@@ -18,22 +18,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'homePage'])->name('home.page');
 
-
-
-/*
-|--------------------------------------------------------------------------
-| User Page Route
-|--------------------------------------------------------------------------
-*/
 Route::get('/login', [UserController::class, 'userLogin'])->name('user.login');
 Route::get('/registration', [UserController::class, 'userRegister'])->name('user.register');
-
-/*
-|--------------------------------------------------------------------------
-| Post Page Route
-|--------------------------------------------------------------------------
-*/
-Route::get('/add-post',[PostController::class, 'addPost'])->name('add.post');
-Route::get('/edit-post',[PostController::class, 'editPost'])->name('edit.post');
-Route::get('/all-post',[PostController::class, 'allPost'])->name('all.post');
-Route::get('/posts/single-post',[PostController::class, 'singlePost'])->name('single.post');
+Route::get('/profile', [UserController::class, 'userProfile'])->name('user.profile');
