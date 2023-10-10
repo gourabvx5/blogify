@@ -9,7 +9,11 @@
                     <a class="nav_link" href="{{route('home.page')}}">Home</a>
                 </li>
                 <li>
+<<<<<<< HEAD
                     <a class="nav_link" href="#">Posts</a>
+=======
+                    <a class="nav_link" href="{{route('all.post')}}">Posts</a>
+>>>>>>> b5e397dce7f0366115af9e7d993d0cdecf14525c
                 </li>
                 <li>
                     <a class="nav_link" href="#">About</a>

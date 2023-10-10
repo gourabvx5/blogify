@@ -46,6 +46,7 @@ const inputTarget = e.target;
 const file = inputTarget.files[0];
 
 if (file) {
+<<<<<<< HEAD
 const reader = new FileReader();
 
 reader.addEventListener("load", function (e) {
@@ -63,6 +64,25 @@ reader.readAsDataURL(file);
 } else {
 pictureImage.innerHTML = pictureImageTxt;
 }
+=======
+    const reader = new FileReader();
+
+    reader.addEventListener("load", function (e) {
+        const readerTarget = e.target;
+
+        const img = document.createElement("img");
+        img.src = readerTarget.result;
+        img.classList.add("picture__img");
+
+        pictureImage.innerHTML = "";
+        pictureImage.appendChild(img);
+    });
+
+    reader.readAsDataURL(file);
+    } else {
+        pictureImage.innerHTML = pictureImageTxt;
+    }
+>>>>>>> b5e397dce7f0366115af9e7d993d0cdecf14525c
 });
 
 
@@ -72,7 +92,11 @@ pictureImage.innerHTML = pictureImageTxt;
 |--------------------------------------------------------------------------
 */
 (function () {
+<<<<<<< HEAD
     var tagList = ['Technology', 'Sports', 'Football', 'Cricket'];
+=======
+    var tagList = ['Technology', 'Sports', 'Web Development', 'Web  Design'];
+>>>>>>> b5e397dce7f0366115af9e7d993d0cdecf14525c
 
     
     var $tagList = $("#tagList");
