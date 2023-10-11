@@ -20,4 +20,9 @@ Route::get('/', [HomeController::class, 'homePage'])->name('home.page');
 
 Route::get('/login', [UserController::class, 'userLogin'])->name('user.login');
 Route::get('/registration', [UserController::class, 'userRegister'])->name('user.register');
+Route::post('/registration', [UserController::class, 'userRegister'])->name('user.register');
 Route::get('/profile', [UserController::class, 'userProfile'])->name('user.profile');
+
+//Post APIs
+
+Route::get('/addpost', [PostController::class, 'posts_create']);

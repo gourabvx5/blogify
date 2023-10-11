@@ -20,7 +20,7 @@ class PostController extends Controller
     
     public function posts_create()
     {
-        return view();
+        return view('pages.post.add-post');
     }
 
     public function posts_store(Request $request)

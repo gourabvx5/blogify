@@ -9,23 +9,13 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+    public function userRegister(Request $request)
+    {
+        view('pages.users.registration');
+    }
+    
     public function userRegistration(Request $request)
     {
-<<<<<<< HEAD
-        return view('pages.users.login');
-    }
-    public function userRegister()
-    {
-        return view('pages.users.registration');
-    }
-    public function userProfile()
-    {
-        return view('pages.users.profile');
-    }
-    public function userProfile()
-    {
-        return view('pages.post.profile.profile');
-=======
         $validatedData = $request->validate([
             'first_name' => 'required|string|max:255',
             'last_name' => 'required|string|max:255',
@@ -48,6 +38,5 @@ class UserController extends Controller
                 "message" => $e->getMessage()
             ], 500);
         }
->>>>>>> 101dc51837f5b6817ecd0ca04d988adab4982d17
     }
 }
