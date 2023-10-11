@@ -26,3 +26,4 @@ Route::get('/profile', [UserController::class, 'userProfile'])->name('user.profi
 //Post APIs
 
 Route::get('/addpost', [PostController::class, 'posts_create']);
+Route::get('/editpost',[PostController::class, 'post_edit']);
