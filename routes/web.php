@@ -19,12 +19,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'homePage'])->name('home.page');
 
 Route::get('/login', [UserController::class, 'userLogin'])->name('user.login');
-Route::get('/login', [UserController::class, 'userLogin']);
+Route::post('/login', [UserController::class, 'userLogin']);
 Route::get('/registration', [UserController::class, 'userRegister'])->name('user.register');
 Route::post('/registration', [UserController::class, 'userRegister']);
 Route::get('/profile', [UserController::class, 'userProfile'])->name('user.profile');
 
 //Post APIs
+Route::get('/allpost', [PostController::class, 'allPost'])->name('all.post');
+Route::get('/singlepost', [PostController::class, 'singlePost'])->name('single.post');
 
 Route::get('/addpost', [PostController::class, 'posts_create']);
 Route::get('/editpost',[PostController::class, 'post_edit']);

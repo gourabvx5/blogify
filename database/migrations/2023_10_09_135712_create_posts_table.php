@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId("post_id");
             $table->string('post_title');
             $table->longText('post_desc');
-            $table->string('post_imagethumb')->nullable();
+            $table->string('post_thumbnail')->nullable();
             $table->timestamps();
         });
     }

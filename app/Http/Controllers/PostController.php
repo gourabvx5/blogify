@@ -7,6 +7,14 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    public function allPost ()
+    {
+        return  view('pages.post.all-post');
+    }
+    public function singlePost ()
+    {
+        return  view('pages.post.single-post');
+    }
     public function posts_index()
     {
         return view('pages.post.home.author-home');
